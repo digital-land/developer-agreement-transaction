@@ -119,18 +119,28 @@
     </form>
     <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
                 <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">241</span> records.</p>
                 <p class="govuk-visually-hidden">There are
                     <span class="js-accessible-list-count">241</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
   <tbody>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./00-02134-S106-1-T1" data-filter="match-content">00/02134/S106/1/T1</a>
@@ -139,7 +149,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./00-02134-S106-1-T2" data-filter="match-content">00/02134/S106/1/T2</a>
@@ -148,7 +158,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./02-03264-S106-1-T1" data-filter="match-content">02/03264/S106/1/T1</a>
@@ -157,7 +167,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./06-00246-S106-13-T1" data-filter="match-content">06/00246/S106/13/T1</a>
@@ -166,7 +176,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./06-01520-S106-1-T1" data-filter="match-content">06/01520/S106/1/T1</a>
@@ -175,7 +185,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./07-03648-S106-3-T1" data-filter="match-content">07/03648/S106/3/T1</a>
@@ -184,7 +194,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./08-00818-S106-2-T1" data-filter="match-content">08/00818/S106/2/T1</a>
@@ -194,7 +204,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./08-00818-S106-2-T2" data-filter="match-content">08/00818/S106/2/T2</a>
@@ -203,7 +213,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./09-01790-S106-1-T1" data-filter="match-content">09/01790/S106/1/T1</a>
@@ -212,7 +222,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./10-00793-S106-3-T1" data-filter="match-content">10/00793/S106/3/T1</a>
@@ -221,7 +231,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./10-00793-S106-4-T1" data-filter="match-content">10/00793/S106/4/T1</a>
@@ -230,7 +240,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./10-02253-S106-3-T1" data-filter="match-content">10/02253/S106/3/T1</a>
@@ -240,7 +250,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./10-02253-S106-3-T2" data-filter="match-content">10/02253/S106/3/T2</a>
@@ -249,7 +259,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-00170-S106-1-T1" data-filter="match-content">11/00170/S106/1/T1</a>
@@ -258,7 +268,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-00170-S106-1-T2" data-filter="match-content">11/00170/S106/1/T2</a>
@@ -267,7 +277,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-00170-S106-2-T1" data-filter="match-content">11/00170/S106/2/T1</a>
@@ -276,7 +286,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-00390-S106-1-T1" data-filter="match-content">11/00390/S106/1/T1</a>
@@ -285,7 +295,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01188-S106-1-T1" data-filter="match-content">11/01188/S106/1/T1</a>
@@ -294,7 +304,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01188-S106-2-T1" data-filter="match-content">11/01188/S106/2/T1</a>
@@ -304,7 +314,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01188-S106-2-T2" data-filter="match-content">11/01188/S106/2/T2</a>
@@ -313,7 +323,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01755-S106-2-T1" data-filter="match-content">11/01755/S106/2/T1</a>
@@ -322,7 +332,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01818-S106-3-T1" data-filter="match-content">11/01818/S106/3/T1</a>
@@ -331,7 +341,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01867-S106-8-T1" data-filter="match-content">11/01867/S106/8/T1</a>
@@ -340,7 +350,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01867-S106-13-T1" data-filter="match-content">11/01867/S106/13/T1</a>
@@ -349,7 +359,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01942-S106-1-T1" data-filter="match-content">11/01942/S106/1/T1</a>
@@ -358,7 +368,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01967-S106-1-T1" data-filter="match-content">11/01967/S106/1/T1</a>
@@ -368,7 +378,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01967-S106-1-T2" data-filter="match-content">11/01967/S106/1/T2</a>
@@ -377,7 +387,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01967-S106-3-T1" data-filter="match-content">11/01967/S106/3/T1</a>
@@ -386,7 +396,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11-01967-S106-4-T1" data-filter="match-content">11/01967/S106/4/T1</a>
@@ -395,7 +405,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-00415-S106-1-T1" data-filter="match-content">12/00415/S106/1/T1</a>
@@ -404,7 +414,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-00415-S106-2-T1" data-filter="match-content">12/00415/S106/2/T1</a>
@@ -413,7 +423,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-00598-S106-2-T1" data-filter="match-content">12/00598/S106/2/T1</a>
@@ -423,7 +433,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-00598-S106-2-T2" data-filter="match-content">12/00598/S106/2/T2</a>
@@ -432,7 +442,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-00598-S106-3-T1" data-filter="match-content">12/00598/S106/3/T1</a>
@@ -442,7 +452,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-00598-S106-3-T2" data-filter="match-content">12/00598/S106/3/T2</a>
@@ -451,7 +461,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01166-S106-2-T1" data-filter="match-content">12/01166/S106/2/T1</a>
@@ -460,7 +470,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01166-S106-4-T1" data-filter="match-content">12/01166/S106/4/T1</a>
@@ -469,7 +479,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01233-S106-1-T1" data-filter="match-content">12/01233/S106/1/T1</a>
@@ -479,7 +489,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01233-S106-1-T2" data-filter="match-content">12/01233/S106/1/T2</a>
@@ -489,7 +499,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01233-S106-1-T3" data-filter="match-content">12/01233/S106/1/T3</a>
@@ -498,7 +508,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01233-S106-2-T1" data-filter="match-content">12/01233/S106/2/T1</a>
@@ -507,7 +517,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01233-S106-2-T2" data-filter="match-content">12/01233/S106/2/T2</a>
@@ -517,7 +527,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01233-S106-2-T3" data-filter="match-content">12/01233/S106/2/T3</a>
@@ -527,7 +537,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01234-S106-1-T1" data-filter="match-content">12/01234/S106/1/T1</a>
@@ -537,7 +547,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01234-S106-1-T2" data-filter="match-content">12/01234/S106/1/T2</a>
@@ -546,7 +556,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01234-S106-2-T1" data-filter="match-content">12/01234/S106/2/T1</a>
@@ -555,7 +565,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01234-S106-3-T1" data-filter="match-content">12/01234/S106/3/T1</a>
@@ -564,7 +574,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01392-S106-1-T1" data-filter="match-content">12/01392/S106/1/T1</a>
@@ -573,7 +583,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01514-S106-2-T1" data-filter="match-content">12/01514/S106/2/T1</a>
@@ -582,7 +592,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12-01957-S106-1-T1" data-filter="match-content">12/01957/S106/1/T1</a>
@@ -591,7 +601,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00293-S106-6-T1" data-filter="match-content">13/00293/S106/6/T1</a>
@@ -600,7 +610,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00293-S106-7-T1" data-filter="match-content">13/00293/S106/7/T1</a>
@@ -609,7 +619,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00293-S106-10-T1" data-filter="match-content">13/00293/S106/10/T1</a>
@@ -618,7 +628,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00293-S106-11-T1" data-filter="match-content">13/00293/S106/11/T1</a>
@@ -627,7 +637,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00293-S106-11-T2" data-filter="match-content">13/00293/S106/11/T2</a>
@@ -636,7 +646,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00293-S106-12-T1" data-filter="match-content">13/00293/S106/12/T1</a>
@@ -646,7 +656,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00293-S106-12-T2" data-filter="match-content">13/00293/S106/12/T2</a>
@@ -655,7 +665,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00293-S106-13-T1" data-filter="match-content">13/00293/S106/13/T1</a>
@@ -665,7 +675,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00293-S106-13-T2" data-filter="match-content">13/00293/S106/13/T2</a>
@@ -674,7 +684,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00294-S106-1-T1" data-filter="match-content">13/00294/S106/1/T1</a>
@@ -683,7 +693,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00294-S106-2-T1" data-filter="match-content">13/00294/S106/2/T1</a>
@@ -692,7 +702,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00572-S106-1-T1" data-filter="match-content">13/00572/S106/1/T1</a>
@@ -701,7 +711,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00851-S106-3-T1" data-filter="match-content">13/00851/S106/3/T1</a>
@@ -711,7 +721,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00851-S106-3-T2" data-filter="match-content">13/00851/S106/3/T2</a>
@@ -720,7 +730,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00947-S106-2-T1" data-filter="match-content">13/00947/S106/2/T1</a>
@@ -729,7 +739,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00947-S106-4-T1" data-filter="match-content">13/00947/S106/4/T1</a>
@@ -739,7 +749,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00947-S106-4-T2" data-filter="match-content">13/00947/S106/4/T2</a>
@@ -748,7 +758,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-00947-S106-5-T1" data-filter="match-content">13/00947/S106/5/T1</a>
@@ -757,7 +767,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01064-S106-1-T1" data-filter="match-content">13/01064/S106/1/T1</a>
@@ -766,7 +776,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01431-S106-1-T1" data-filter="match-content">13/01431/S106/1/T1</a>
@@ -775,7 +785,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01433-S106-3-T1" data-filter="match-content">13/01433/S106/3/T1</a>
@@ -784,7 +794,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01433-S106-4-T1" data-filter="match-content">13/01433/S106/4/T1</a>
@@ -793,7 +803,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01433-S106-5-T1" data-filter="match-content">13/01433/S106/5/T1</a>
@@ -802,7 +812,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01433-S106-6-T1" data-filter="match-content">13/01433/S106/6/T1</a>
@@ -811,7 +821,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01433-S106-8-T1" data-filter="match-content">13/01433/S106/8/T1</a>
@@ -820,7 +830,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01433-S106-9-T1" data-filter="match-content">13/01433/S106/9/T1</a>
@@ -829,7 +839,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01433-S106-10-T1" data-filter="match-content">13/01433/S106/10/T1</a>
@@ -838,7 +848,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01737-S106-4-T1" data-filter="match-content">13/01737/S106/4/T1</a>
@@ -847,7 +857,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-01737-S106-5-T1" data-filter="match-content">13/01737/S106/5/T1</a>
@@ -856,7 +866,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-02005-S106-1-T1" data-filter="match-content">13/02005/S106/1/T1</a>
@@ -866,7 +876,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-02005-S106-1-T2" data-filter="match-content">13/02005/S106/1/T2</a>
@@ -875,7 +885,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-02005-S106-2-T1" data-filter="match-content">13/02005/S106/2/T1</a>
@@ -885,7 +895,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-02005-S106-2-T2" data-filter="match-content">13/02005/S106/2/T2</a>
@@ -894,7 +904,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-02005-S106-3-T1" data-filter="match-content">13/02005/S106/3/T1</a>
@@ -904,7 +914,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-02005-S106-3-T2" data-filter="match-content">13/02005/S106/3/T2</a>
@@ -913,7 +923,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-02005-S106-3-T3" data-filter="match-content">13/02005/S106/3/T3</a>
@@ -922,7 +932,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-02005-S106-4-T1" data-filter="match-content">13/02005/S106/4/T1</a>
@@ -932,7 +942,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13-02005-S106-4-T2" data-filter="match-content">13/02005/S106/4/T2</a>
@@ -941,7 +951,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00242-S106-3-T1" data-filter="match-content">14/00242/S106/3/T1</a>
@@ -950,7 +960,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00242-S106-5-T1" data-filter="match-content">14/00242/S106/5/T1</a>
@@ -959,7 +969,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00242-S106-6-T1" data-filter="match-content">14/00242/S106/6/T1</a>
@@ -968,7 +978,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00242-S106-7-T1" data-filter="match-content">14/00242/S106/7/T1</a>
@@ -977,7 +987,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00242-S106-7-T2" data-filter="match-content">14/00242/S106/7/T2</a>
@@ -986,7 +996,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00242-S106-8-T1" data-filter="match-content">14/00242/S106/8/T1</a>
@@ -995,7 +1005,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00473-S106-3-T1" data-filter="match-content">14/00473/S106/3/T1</a>
@@ -1004,7 +1014,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00473-S106-4-T1" data-filter="match-content">14/00473/S106/4/T1</a>
@@ -1013,7 +1023,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00473-S106-7-T1" data-filter="match-content">14/00473/S106/7/T1</a>
@@ -1023,7 +1033,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00473-S106-7-T2" data-filter="match-content">14/00473/S106/7/T2</a>
@@ -1032,7 +1042,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00473-S106-8-T1" data-filter="match-content">14/00473/S106/8/T1</a>
@@ -1042,7 +1052,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-00473-S106-8-T2" data-filter="match-content">14/00473/S106/8/T2</a>
@@ -1051,7 +1061,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-4-T1" data-filter="match-content">14/01139/S106/4/T1</a>
@@ -1060,7 +1070,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-6-T1" data-filter="match-content">14/01139/S106/6/T1</a>
@@ -1069,7 +1079,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-7-T1" data-filter="match-content">14/01139/S106/7/T1</a>
@@ -1078,7 +1088,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-9-T1" data-filter="match-content">14/01139/S106/9/T1</a>
@@ -1088,7 +1098,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-9-T2" data-filter="match-content">14/01139/S106/9/T2</a>
@@ -1097,7 +1107,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-10-T1" data-filter="match-content">14/01139/S106/10/T1</a>
@@ -1107,7 +1117,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-10-T2" data-filter="match-content">14/01139/S106/10/T2</a>
@@ -1116,7 +1126,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-10-T3" data-filter="match-content">14/01139/S106/10/T3</a>
@@ -1125,7 +1135,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-12-T1" data-filter="match-content">14/01139/S106/12/T1</a>
@@ -1134,7 +1144,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-16-T1" data-filter="match-content">14/01139/S106/16/T1</a>
@@ -1143,7 +1153,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-16-T2" data-filter="match-content">14/01139/S106/16/T2</a>
@@ -1153,7 +1163,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-16-T3" data-filter="match-content">14/01139/S106/16/T3</a>
@@ -1162,7 +1172,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-16-T4" data-filter="match-content">14/01139/S106/16/T4</a>
@@ -1172,7 +1182,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01139-S106-16-T5" data-filter="match-content">14/01139/S106/16/T5</a>
@@ -1181,7 +1191,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01721-S106-2-T1" data-filter="match-content">14/01721/S106/2/T1</a>
@@ -1190,7 +1200,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01721-S106-3-T1" data-filter="match-content">14/01721/S106/3/T1</a>
@@ -1199,7 +1209,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01721-S106-4-T1" data-filter="match-content">14/01721/S106/4/T1</a>
@@ -1208,7 +1218,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01721-S106-5-T1" data-filter="match-content">14/01721/S106/5/T1</a>
@@ -1217,7 +1227,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01721-S106-7-T1" data-filter="match-content">14/01721/S106/7/T1</a>
@@ -1226,7 +1236,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01721-S106-8-T1" data-filter="match-content">14/01721/S106/8/T1</a>
@@ -1235,7 +1245,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01721-S106-10-T1" data-filter="match-content">14/01721/S106/10/T1</a>
@@ -1244,7 +1254,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01721-S106-11-T1" data-filter="match-content">14/01721/S106/11/T1</a>
@@ -1253,7 +1263,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01721-S106-11-T2" data-filter="match-content">14/01721/S106/11/T2</a>
@@ -1262,7 +1272,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01744-S106-1-T1" data-filter="match-content">14/01744/S106/1/T1</a>
@@ -1271,7 +1281,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01744-S106-2-T1" data-filter="match-content">14/01744/S106/2/T1</a>
@@ -1280,7 +1290,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01904-S106-2-T1" data-filter="match-content">14/01904/S106/2/T1</a>
@@ -1289,7 +1299,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01904-S106-2-T2" data-filter="match-content">14/01904/S106/2/T2</a>
@@ -1299,7 +1309,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01904-S106-2-T3" data-filter="match-content">14/01904/S106/2/T3</a>
@@ -1308,7 +1318,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01904-S106-2-T4" data-filter="match-content">14/01904/S106/2/T4</a>
@@ -1317,7 +1327,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01905-S106-1-T1" data-filter="match-content">14/01905/S106/1/T1</a>
@@ -1327,7 +1337,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01905-S106-1-T2" data-filter="match-content">14/01905/S106/1/T2</a>
@@ -1336,7 +1346,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01905-S106-2-T1" data-filter="match-content">14/01905/S106/2/T1</a>
@@ -1346,7 +1356,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01905-S106-2-T2" data-filter="match-content">14/01905/S106/2/T2</a>
@@ -1355,7 +1365,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01905-S106-3-T1" data-filter="match-content">14/01905/S106/3/T1</a>
@@ -1365,7 +1375,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01905-S106-3-T2" data-filter="match-content">14/01905/S106/3/T2</a>
@@ -1374,7 +1384,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01905-S106-4-T1" data-filter="match-content">14/01905/S106/4/T1</a>
@@ -1384,7 +1394,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01905-S106-4-T2" data-filter="match-content">14/01905/S106/4/T2</a>
@@ -1393,7 +1403,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-1-T1" data-filter="match-content">14/01941/S106/1/T1</a>
@@ -1402,7 +1412,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-4-T1" data-filter="match-content">14/01941/S106/4/T1</a>
@@ -1411,7 +1421,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-4-T2" data-filter="match-content">14/01941/S106/4/T2</a>
@@ -1421,7 +1431,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-4-T3" data-filter="match-content">14/01941/S106/4/T3</a>
@@ -1430,7 +1440,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-5-T1" data-filter="match-content">14/01941/S106/5/T1</a>
@@ -1439,7 +1449,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-7-T1" data-filter="match-content">14/01941/S106/7/T1</a>
@@ -1449,7 +1459,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-7-T2" data-filter="match-content">14/01941/S106/7/T2</a>
@@ -1458,7 +1468,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-8-T1" data-filter="match-content">14/01941/S106/8/T1</a>
@@ -1467,7 +1477,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-8-T2" data-filter="match-content">14/01941/S106/8/T2</a>
@@ -1477,7 +1487,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-8-T3" data-filter="match-content">14/01941/S106/8/T3</a>
@@ -1486,7 +1496,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-9-T1" data-filter="match-content">14/01941/S106/9/T1</a>
@@ -1495,7 +1505,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-10-T1" data-filter="match-content">14/01941/S106/10/T1</a>
@@ -1504,7 +1514,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-11-T1" data-filter="match-content">14/01941/S106/11/T1</a>
@@ -1513,7 +1523,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-11-T2" data-filter="match-content">14/01941/S106/11/T2</a>
@@ -1523,7 +1533,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-11-T3" data-filter="match-content">14/01941/S106/11/T3</a>
@@ -1533,7 +1543,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-11-T4" data-filter="match-content">14/01941/S106/11/T4</a>
@@ -1542,7 +1552,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14-01941-S106-11-T5" data-filter="match-content">14/01941/S106/11/T5</a>
@@ -1551,7 +1561,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-00642-S106-2-T1" data-filter="match-content">15/00642/S106/2/T1</a>
@@ -1560,7 +1570,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-00642-S106-3-T1" data-filter="match-content">15/00642/S106/3/T1</a>
@@ -1569,7 +1579,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-00642-S106-4-T1" data-filter="match-content">15/00642/S106/4/T1</a>
@@ -1578,7 +1588,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-01088-S106-1-T1" data-filter="match-content">15/01088/S106/1/T1</a>
@@ -1587,7 +1597,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-01088-S106-2-T1" data-filter="match-content">15/01088/S106/2/T1</a>
@@ -1596,7 +1606,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-01941-S106-1-T1" data-filter="match-content">15/01941/S106/1/T1</a>
@@ -1605,7 +1615,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-01941-S106-7-T1" data-filter="match-content">15/01941/S106/7/T1</a>
@@ -1614,7 +1624,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-01941-S106-7-T2" data-filter="match-content">15/01941/S106/7/T2</a>
@@ -1623,7 +1633,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-01941-S106-7-T3" data-filter="match-content">15/01941/S106/7/T3</a>
@@ -1632,7 +1642,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-01941-S106-10-T1" data-filter="match-content">15/01941/S106/10/T1</a>
@@ -1641,7 +1651,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15-01941-S106-11-T1" data-filter="match-content">15/01941/S106/11/T1</a>
@@ -1650,7 +1660,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00188-S106-1-T1" data-filter="match-content">16/00188/S106/1/T1</a>
@@ -1659,7 +1669,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00274-S106-1-T1" data-filter="match-content">16/00274/S106/1/T1</a>
@@ -1668,7 +1678,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00274-S106-2-T1" data-filter="match-content">16/00274/S106/2/T1</a>
@@ -1677,7 +1687,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00460-S106-2-T1" data-filter="match-content">16/00460/S106/2/T1</a>
@@ -1687,7 +1697,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00460-S106-2-T2" data-filter="match-content">16/00460/S106/2/T2</a>
@@ -1697,7 +1707,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00460-S106-2-T3" data-filter="match-content">16/00460/S106/2/T3</a>
@@ -1706,7 +1716,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00467-S106-3-T1" data-filter="match-content">16/00467/S106/3/T1</a>
@@ -1715,7 +1725,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00467-S106-4-T1" data-filter="match-content">16/00467/S106/4/T1</a>
@@ -1724,7 +1734,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00467-S106-5-T1" data-filter="match-content">16/00467/S106/5/T1</a>
@@ -1733,7 +1743,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00467-S106-6-T1" data-filter="match-content">16/00467/S106/6/T1</a>
@@ -1742,7 +1752,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00467-S106-6-T2" data-filter="match-content">16/00467/S106/6/T2</a>
@@ -1751,7 +1761,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00467-S106-7-T1" data-filter="match-content">16/00467/S106/7/T1</a>
@@ -1760,7 +1770,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-00467-S106-8-T1" data-filter="match-content">16/00467/S106/8/T1</a>
@@ -1769,7 +1779,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-01530-S106-1-T1" data-filter="match-content">16/01530/S106/1/T1</a>
@@ -1778,7 +1788,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-01530-S106-2-T1" data-filter="match-content">16/01530/S106/2/T1</a>
@@ -1787,7 +1797,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-01571-S106-1-T1" data-filter="match-content">16/01571/S106/1/T1</a>
@@ -1797,7 +1807,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-01571-S106-1-T2" data-filter="match-content">16/01571/S106/1/T2</a>
@@ -1806,7 +1816,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-01571-S106-2-T1" data-filter="match-content">16/01571/S106/2/T1</a>
@@ -1816,7 +1826,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-01571-S106-2-T2" data-filter="match-content">16/01571/S106/2/T2</a>
@@ -1825,7 +1835,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-01598-S106-1-T1" data-filter="match-content">16/01598/S106/1/T1</a>
@@ -1834,7 +1844,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16-02016-S106-1-T1" data-filter="match-content">16/02016/S106/1/T1</a>
@@ -1843,7 +1853,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-00557-S106-2-T1" data-filter="match-content">17/00557/S106/2/T1</a>
@@ -1852,7 +1862,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-00557-S106-3-T1" data-filter="match-content">17/00557/S106/3/T1</a>
@@ -1861,7 +1871,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-00557-S106-4-T1" data-filter="match-content">17/00557/S106/4/T1</a>
@@ -1870,7 +1880,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-00557-S106-5-T1" data-filter="match-content">17/00557/S106/5/T1</a>
@@ -1879,7 +1889,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-00557-S106-6-T1" data-filter="match-content">17/00557/S106/6/T1</a>
@@ -1888,7 +1898,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-2-T1" data-filter="match-content">17/01162/S106/2/T1</a>
@@ -1897,7 +1907,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-3-T1" data-filter="match-content">17/01162/S106/3/T1</a>
@@ -1906,7 +1916,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-4-T1" data-filter="match-content">17/01162/S106/4/T1</a>
@@ -1915,7 +1925,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-5-T1" data-filter="match-content">17/01162/S106/5/T1</a>
@@ -1924,7 +1934,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-6-T1" data-filter="match-content">17/01162/S106/6/T1</a>
@@ -1933,7 +1943,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-7-T1" data-filter="match-content">17/01162/S106/7/T1</a>
@@ -1942,7 +1952,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-7-T2" data-filter="match-content">17/01162/S106/7/T2</a>
@@ -1951,7 +1961,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-9-T1" data-filter="match-content">17/01162/S106/9/T1</a>
@@ -1961,7 +1971,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-9-T2" data-filter="match-content">17/01162/S106/9/T2</a>
@@ -1970,7 +1980,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-10-T1" data-filter="match-content">17/01162/S106/10/T1</a>
@@ -1979,7 +1989,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01162-S106-10-T2" data-filter="match-content">17/01162/S106/10/T2</a>
@@ -1988,7 +1998,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01202-S106-1-T1" data-filter="match-content">17/01202/S106/1/T1</a>
@@ -1997,7 +2007,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01797-S106-2-T1" data-filter="match-content">17/01797/S106/2/T1</a>
@@ -2006,7 +2016,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01797-S106-3-T1" data-filter="match-content">17/01797/S106/3/T1</a>
@@ -2015,7 +2025,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01797-S106-4-T1" data-filter="match-content">17/01797/S106/4/T1</a>
@@ -2024,7 +2034,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01797-S106-5-T1" data-filter="match-content">17/01797/S106/5/T1</a>
@@ -2033,7 +2043,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17-01797-S106-6-T1" data-filter="match-content">17/01797/S106/6/T1</a>
@@ -2042,7 +2052,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-00091-S106--1-T1" data-filter="match-content">18/00091/S106 /1/T1</a>
@@ -2051,7 +2061,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-00608-S106-2-T1" data-filter="match-content">18/00608/S106/2/T1</a>
@@ -2060,7 +2070,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-00608-S106-5-T1" data-filter="match-content">18/00608/S106/5/T1</a>
@@ -2069,7 +2079,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-00608-S106-6-T1" data-filter="match-content">18/00608/S106/6/T1</a>
@@ -2078,7 +2088,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-00608-S106-7-T1" data-filter="match-content">18/00608/S106/7/T1</a>
@@ -2087,7 +2097,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-00608-S106-9-T1" data-filter="match-content">18/00608/S106/9/T1</a>
@@ -2096,7 +2106,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01458-FUL-0001-T1" data-filter="match-content">18/01458/FUL/0001/T1</a>
@@ -2105,7 +2115,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01458-FUL-0001-T2" data-filter="match-content">18/01458/FUL/0001/T2</a>
@@ -2114,7 +2124,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-1-T1" data-filter="match-content">18/01696/S106/1/T1</a>
@@ -2123,7 +2133,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-3-T1" data-filter="match-content">18/01696/S106/3/T1</a>
@@ -2133,7 +2143,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-3-T2" data-filter="match-content">18/01696/S106/3/T2</a>
@@ -2142,7 +2152,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-4-T1" data-filter="match-content">18/01696/S106/4/T1</a>
@@ -2152,7 +2162,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-4-T2" data-filter="match-content">18/01696/S106/4/T2</a>
@@ -2161,7 +2171,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-5-T1" data-filter="match-content">18/01696/S106/5/T1</a>
@@ -2171,7 +2181,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-5-T2" data-filter="match-content">18/01696/S106/5/T2</a>
@@ -2180,7 +2190,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-6-T1" data-filter="match-content">18/01696/S106/6/T1</a>
@@ -2190,7 +2200,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-6-T2" data-filter="match-content">18/01696/S106/6/T2</a>
@@ -2199,7 +2209,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-6-T3" data-filter="match-content">18/01696/S106/6/T3</a>
@@ -2208,7 +2218,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-7-T1" data-filter="match-content">18/01696/S106/7/T1</a>
@@ -2218,7 +2228,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-7-T2" data-filter="match-content">18/01696/S106/7/T2</a>
@@ -2227,7 +2237,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-7-T3" data-filter="match-content">18/01696/S106/7/T3</a>
@@ -2236,7 +2246,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-7-T4" data-filter="match-content">18/01696/S106/7/T4</a>
@@ -2245,7 +2255,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18-01696-S106-7-T5" data-filter="match-content">18/01696/S106/7/T5</a>
@@ -2254,7 +2264,7 @@
   <td>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19-00058-S106-1-T1" data-filter="match-content">19/00058/S106/1/T1</a>
@@ -2264,7 +2274,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19-00058-S106-1-T2" data-filter="match-content">19/00058/S106/1/T2</a>
@@ -2273,7 +2283,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19-00148-FUL-0001-T1" data-filter="match-content">19/00148/FUL/0001/T1</a>
@@ -2282,7 +2292,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19-00148-FUL-0001-T2" data-filter="match-content">19/00148/FUL/0001/T2</a>
@@ -2291,7 +2301,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19-00425-FUL-0001-T1" data-filter="match-content">19/00425/FUL/0001/T1</a>
@@ -2300,7 +2310,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19-00425-FUL-0001-T2" data-filter="match-content">19/00425/FUL/0001/T2</a>
@@ -2309,7 +2319,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19-01122-FULH-0001-T1" data-filter="match-content">19/01122/FULH/0001/T1</a>
@@ -2318,7 +2328,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19-01122-FULH-0001-T2" data-filter="match-content">19/01122/FULH/0001/T2</a>
@@ -2327,7 +2337,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./20-01140-S106-5-T1" data-filter="match-content">20/01140/S106/5/T1</a>
@@ -2336,7 +2346,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./20-01140-S106-6-T1" data-filter="match-content">20/01140/S106/6/T1</a>
@@ -2347,8 +2357,8 @@
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -2437,6 +2447,15 @@
             list_section_selector: '.index-list-wrapper',
             count_wrapper_selector: '.count-wrapper'
         })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>

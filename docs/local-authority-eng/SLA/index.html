@@ -119,18 +119,28 @@
     </form>
     <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
                 <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">104</span> records.</p>
                 <p class="govuk-visually-hidden">There are
                     <span class="js-accessible-list-count">104</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
   <tbody>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./CU-2018-0005-tran1" data-filter="match-content">CU/2018/0005-tran1</a>
@@ -139,7 +149,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./CU-2018-0005-tran2" data-filter="match-content">CU/2018/0005-tran2</a>
@@ -148,7 +158,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2012-0817-tran1" data-filter="match-content">SL/2012/0817-tran1</a>
@@ -157,7 +167,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2012-0817-tran2" data-filter="match-content">SL/2012/0817-tran2</a>
@@ -166,7 +176,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran1" data-filter="match-content">SL/2013/1120-tran1</a>
@@ -175,7 +185,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran2" data-filter="match-content">SL/2013/1120-tran2</a>
@@ -184,7 +194,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran3" data-filter="match-content">SL/2013/1120-tran3</a>
@@ -193,7 +203,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran4" data-filter="match-content">SL/2013/1120-tran4</a>
@@ -202,7 +212,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran5" data-filter="match-content">SL/2013/1120-tran5</a>
@@ -211,7 +221,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran6" data-filter="match-content">SL/2013/1120-tran6</a>
@@ -220,7 +230,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran7" data-filter="match-content">SL/2013/1120-tran7</a>
@@ -229,7 +239,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran8" data-filter="match-content">SL/2013/1120-tran8</a>
@@ -238,7 +248,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran9" data-filter="match-content">SL/2013/1120-tran9</a>
@@ -247,7 +257,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran10" data-filter="match-content">SL/2013/1120-tran10</a>
@@ -256,7 +266,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran11" data-filter="match-content">SL/2013/1120-tran11</a>
@@ -265,7 +275,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran12" data-filter="match-content">SL/2013/1120-tran12</a>
@@ -274,7 +284,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran13" data-filter="match-content">SL/2013/1120-tran13</a>
@@ -283,7 +293,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2013-1120-tran14" data-filter="match-content">SL/2013/1120-tran14</a>
@@ -292,7 +302,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2014-0506-tran1" data-filter="match-content">SL/2014/0506-tran1</a>
@@ -301,7 +311,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2014-0506-tran2" data-filter="match-content">SL/2014/0506-tran2</a>
@@ -310,7 +320,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2014-1036-tran1" data-filter="match-content">SL/2014/1036-tran1</a>
@@ -319,7 +329,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2014-1036-tran2" data-filter="match-content">SL/2014/1036-tran2</a>
@@ -328,7 +338,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2015-0733-tran1" data-filter="match-content">SL/2015/0733-tran1</a>
@@ -337,7 +347,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2015-0733-tran2" data-filter="match-content">SL/2015/0733-tran2</a>
@@ -346,7 +356,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2015-1012-tran1" data-filter="match-content">SL/2015/1012-tran1</a>
@@ -355,7 +365,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2015-1012-tran2" data-filter="match-content">SL/2015/1012-tran2</a>
@@ -364,7 +374,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2015-1052-tran1" data-filter="match-content">SL/2015/1052-tran1</a>
@@ -373,7 +383,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2015-1052-tran2" data-filter="match-content">SL/2015/1052-tran2</a>
@@ -382,7 +392,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2015-1092-tran1" data-filter="match-content">SL/2015/1092-tran1</a>
@@ -391,7 +401,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2015-1092-tran2" data-filter="match-content">SL/2015/1092-tran2</a>
@@ -400,7 +410,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0244-tran1" data-filter="match-content">SL/2016/0244-tran1</a>
@@ -409,7 +419,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0244-tran2" data-filter="match-content">SL/2016/0244-tran2</a>
@@ -418,7 +428,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0244-tran3" data-filter="match-content">SL/2016/0244-tran3</a>
@@ -427,7 +437,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0244-tran4" data-filter="match-content">SL/2016/0244-tran4</a>
@@ -436,7 +446,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0244-tran5" data-filter="match-content">SL/2016/0244-tran5</a>
@@ -445,7 +455,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0250-tran1" data-filter="match-content">SL/2016/0250-tran1</a>
@@ -454,7 +464,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0250-tran2" data-filter="match-content">SL/2016/0250-tran2</a>
@@ -463,7 +473,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0398-tran1" data-filter="match-content">SL/2016/0398-tran1</a>
@@ -472,7 +482,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0398-tran2" data-filter="match-content">SL/2016/0398-tran2</a>
@@ -481,7 +491,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0504-tran1" data-filter="match-content">SL/2016/0504-tran1</a>
@@ -490,7 +500,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0504-tran2" data-filter="match-content">SL/2016/0504-tran2</a>
@@ -499,7 +509,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0528-tran1" data-filter="match-content">SL/2016/0528-tran1</a>
@@ -508,7 +518,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0528-tran2" data-filter="match-content">SL/2016/0528-tran2</a>
@@ -517,7 +527,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0602-tran1" data-filter="match-content">SL/2016/0602-tran1</a>
@@ -526,7 +536,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0602-tran2" data-filter="match-content">SL/2016/0602-tran2</a>
@@ -535,7 +545,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0602-tran3" data-filter="match-content">SL/2016/0602-tran3</a>
@@ -544,7 +554,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0888-tran1" data-filter="match-content">SL/2016/0888-tran1</a>
@@ -553,7 +563,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-0888-tran2" data-filter="match-content">SL/2016/0888-tran2</a>
@@ -562,7 +572,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-1015-1--tran1" data-filter="match-content">SL/2016/1015(1)-tran1</a>
@@ -571,7 +581,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-1015-1--tran2" data-filter="match-content">SL/2016/1015(1)-tran2</a>
@@ -580,7 +590,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-1015-1--tran3" data-filter="match-content">SL/2016/1015(1)-tran3</a>
@@ -589,7 +599,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-1015-1--tran4" data-filter="match-content">SL/2016/1015(1)-tran4</a>
@@ -598,7 +608,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-1015-1--tran5" data-filter="match-content">SL/2016/1015(1)-tran5</a>
@@ -607,7 +617,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-1015-2--tran1" data-filter="match-content">SL/2016/1015(2)-tran1</a>
@@ -616,7 +626,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-1109-tran1" data-filter="match-content">SL/2016/1109-tran1</a>
@@ -625,7 +635,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2016-1109-tran2" data-filter="match-content">SL/2016/1109-tran2</a>
@@ -634,7 +644,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0282-tran1" data-filter="match-content">SL/2017/0282-tran1</a>
@@ -643,7 +653,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0282-tran2" data-filter="match-content">SL/2017/0282-tran2</a>
@@ -652,7 +662,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0605-tran1" data-filter="match-content">SL/2017/0605-tran1</a>
@@ -661,7 +671,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0605-tran2" data-filter="match-content">SL/2017/0605-tran2</a>
@@ -670,7 +680,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0776-tran1" data-filter="match-content">SL/2017/0776-tran1</a>
@@ -679,7 +689,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0776-tran2" data-filter="match-content">SL/2017/0776-tran2</a>
@@ -688,7 +698,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0776-tran3" data-filter="match-content">SL/2017/0776-tran3</a>
@@ -697,7 +707,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0841-tran1" data-filter="match-content">SL/2017/0841-tran1</a>
@@ -706,7 +716,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0841-tran2" data-filter="match-content">SL/2017/0841-tran2</a>
@@ -715,7 +725,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0841-tran3" data-filter="match-content">SL/2017/0841-tran3</a>
@@ -724,7 +734,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0841-tran4" data-filter="match-content">SL/2017/0841-tran4</a>
@@ -733,7 +743,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0992-tran1" data-filter="match-content">SL/2017/0992-tran1</a>
@@ -742,7 +752,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0992-tran2" data-filter="match-content">SL/2017/0992-tran2</a>
@@ -751,7 +761,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0992-tran3" data-filter="match-content">SL/2017/0992-tran3</a>
@@ -760,7 +770,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-0992-tran4" data-filter="match-content">SL/2017/0992-tran4</a>
@@ -769,7 +779,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-1092-tran1" data-filter="match-content">SL/2017/1092-tran1</a>
@@ -778,7 +788,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2017-1092-tran2" data-filter="match-content">SL/2017/1092-tran2</a>
@@ -787,7 +797,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0383-tran1" data-filter="match-content">SL/2018/0383-tran1</a>
@@ -796,7 +806,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0383-tran2" data-filter="match-content">SL/2018/0383-tran2</a>
@@ -805,7 +815,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0478-tran1" data-filter="match-content">SL/2018/0478-tran1</a>
@@ -814,7 +824,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0478-tran2" data-filter="match-content">SL/2018/0478-tran2</a>
@@ -823,7 +833,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0608-tran1" data-filter="match-content">SL/2018/0608-tran1</a>
@@ -832,7 +842,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0608-tran2" data-filter="match-content">SL/2018/0608-tran2</a>
@@ -841,7 +851,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0608-tran3" data-filter="match-content">SL/2018/0608-tran3</a>
@@ -850,7 +860,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0707-tran1" data-filter="match-content">SL/2018/0707-tran1</a>
@@ -859,7 +869,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0707-tran2" data-filter="match-content">SL/2018/0707-tran2</a>
@@ -868,7 +878,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0800-tran1" data-filter="match-content">SL/2018/0800-tran1</a>
@@ -877,7 +887,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0800-tran2" data-filter="match-content">SL/2018/0800-tran2</a>
@@ -886,7 +896,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0800-tran3" data-filter="match-content">SL/2018/0800-tran3</a>
@@ -895,7 +905,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0812-tran1" data-filter="match-content">SL/2018/0812-tran1</a>
@@ -904,7 +914,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0812-tran2" data-filter="match-content">SL/2018/0812-tran2</a>
@@ -913,7 +923,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0812-tran3" data-filter="match-content">SL/2018/0812-tran3</a>
@@ -922,7 +932,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0814-tran1" data-filter="match-content">SL/2018/0814-tran1</a>
@@ -931,7 +941,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0814-tran2" data-filter="match-content">SL/2018/0814-tran2</a>
@@ -940,7 +950,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0814-tran3" data-filter="match-content">SL/2018/0814-tran3</a>
@@ -949,7 +959,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0814-tran4" data-filter="match-content">SL/2018/0814-tran4</a>
@@ -958,7 +968,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0814-tran5" data-filter="match-content">SL/2018/0814-tran5</a>
@@ -967,7 +977,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0814-tran6" data-filter="match-content">SL/2018/0814-tran6</a>
@@ -976,7 +986,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0996-tran1" data-filter="match-content">SL/2018/0996-tran1</a>
@@ -985,7 +995,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-0996-tran2" data-filter="match-content">SL/2018/0996-tran2</a>
@@ -994,7 +1004,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-1006-tran1" data-filter="match-content">SL/2018/1006-tran1</a>
@@ -1003,7 +1013,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2018-1006-tran2" data-filter="match-content">SL/2018/1006-tran2</a>
@@ -1012,7 +1022,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2019-0300-tran1" data-filter="match-content">SL/2019/0300-tran1</a>
@@ -1021,7 +1031,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2019-0300-tran2" data-filter="match-content">SL/2019/0300-tran2</a>
@@ -1030,7 +1040,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2019-0579-tran1" data-filter="match-content">SL/2019/0579-tran1</a>
@@ -1039,7 +1049,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2019-0579-tran2" data-filter="match-content">SL/2019/0579-tran2</a>
@@ -1048,7 +1058,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2019-0914-tran1" data-filter="match-content">SL/2019/0914-tran1</a>
@@ -1057,7 +1067,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./SL-2019-0914-tran2" data-filter="match-content">SL/2019/0914-tran2</a>
@@ -1068,8 +1078,8 @@
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -1158,6 +1168,15 @@
             list_section_selector: '.index-list-wrapper',
             count_wrapper_selector: '.count-wrapper'
         })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>
