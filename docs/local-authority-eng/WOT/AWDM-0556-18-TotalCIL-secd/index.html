@@ -130,7 +130,7 @@
                 </a>
             </li><li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
-                Referenced by (0)
+                0 References
                 </a>
             </li>
         </ul>
@@ -140,13 +140,6 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/WOT/AWDM-0556-18-TotalCIL-secd</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">contribution-funding-status
-            </dt>
-            <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/secured" class="govuk-link">Secured</a>
-<span title="contribution-funding-status identifier: secured" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>secured)</span>
-</div>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-contribution
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/WOT/AWDM-0556-18-TotalCIL" class="govuk-link">AWDM/0556/18-TotalCIL</a>
@@ -160,15 +153,22 @@
             </dt>
             <dd class="govuk-summary-list__value">                2019-08-28            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WOT" class="govuk-link">Worthing Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:WOT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WOT)</span>
+            <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/secured" class="govuk-link">Secured</a>
+<span title="contribution-funding-status identifier: secured" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>secured)</span>
+</div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
             <dd class="govuk-summary-list__value">                <span class="dl-select-all">AWDM/0556/18-TotalCIL-secd</span>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WOT" class="govuk-link">Worthing Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:WOT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WOT)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -197,24 +197,24 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>organisation</th>
             <th>contribution-funding-status</th>
-            <th>developer-agreement-contribution</th>
-            <th>developer-agreement-transaction</th>
-            <th>amount</th>
             <th>start-date</th>
+            <th>developer-agreement-contribution</th>
+            <th>amount</th>
+            <th>organisation</th>
+            <th>developer-agreement-transaction</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-10-27</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/db997853c615a760b3c77a390b4e7c7f62ff993b778e7d1c991db8e650fe4859.csv#L10">db997853c615...</a></td>
             <td>9</td>
-                <td>local-authority-eng:WOT</td> 
                 <td>secured</td> 
-                <td>AWDM/0556/18-TotalCIL</td> 
-                <td>AWDM/0556/18-TotalCIL-secd</td> 
-                <td>17081.63</td> 
                 <td>2019-08-28</td> 
+                <td>AWDM/0556/18-TotalCIL</td> 
+                <td>17081.63</td> 
+                <td>local-authority-eng:WOT</td> 
+                <td>AWDM/0556/18-TotalCIL-secd</td> 
         </tr>    </tbody>
 </table>
 
@@ -320,8 +320,24 @@
 	</script>
 
 <script>
+    const datasetName = "developer-agreement-transaction"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({})
+    const $nationalMapLink = document.querySelector('.dl-link-national-map')
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        initGeoJsonLoadCallback: function (urls, featureGroup) {
+            console.log("initial load completed")
+            // do we need to check there isn't more than one shape?
+            const center = featureGroup.getBounds().getCenter()
+            const zoom = mapComponent.map.getZoom()
+            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            console.log(url)
+            if ($nationalMapLink) {
+                // only show this for the datasets we've added to the national map
+                $nationalMapLink.href = url
+                $nationalMapLink.classList.remove("js-hidden")
+            }
+        }
+    })
 </script>
 <script>
     // Initialise back to top

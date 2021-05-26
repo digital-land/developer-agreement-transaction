@@ -130,7 +130,7 @@
                 </a>
             </li><li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
-                Referenced by (0)
+                0 References
                 </a>
             </li>
         </ul>
@@ -151,6 +151,12 @@
 </div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NTY" class="govuk-link">North Tyneside Council</a>
+<span title="Organisation identifier: local-authority-eng:NTY" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NTY)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2019-01-01            </dd>
@@ -158,12 +164,6 @@
             <dt class="govuk-summary-list__key">developer-agreement-contribution
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/NTY/17-00557-S106-2" class="govuk-link">17/00557/S106/2</a>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NTY" class="govuk-link">North Tyneside Council</a>
-<span title="Organisation identifier: local-authority-eng:NTY" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NTY)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
@@ -193,22 +193,22 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>organisation</th>
             <th>contribution-funding-status</th>
-            <th>developer-agreement-contribution</th>
-            <th>developer-agreement-transaction</th>
             <th>start-date</th>
+            <th>developer-agreement-contribution</th>
+            <th>organisation</th>
+            <th>developer-agreement-transaction</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-11</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/23a6b25c16ca0628675350e6b310d900e1be409aa5547a195309825ec01621f8.csv#L190">23a6b25c16ca...</a></td>
             <td>189</td>
-                <td>local-authority-eng:NTY</td> 
                 <td>Allocated</td> 
-                <td>17/00557/S106/2</td> 
-                <td>17/00557/S106/2/T1</td> 
                 <td>2019-01-01</td> 
+                <td>17/00557/S106/2</td> 
+                <td>local-authority-eng:NTY</td> 
+                <td>17/00557/S106/2/T1</td> 
         </tr>    </tbody>
 </table>
 
@@ -314,8 +314,24 @@
 	</script>
 
 <script>
+    const datasetName = "developer-agreement-transaction"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({})
+    const $nationalMapLink = document.querySelector('.dl-link-national-map')
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        initGeoJsonLoadCallback: function (urls, featureGroup) {
+            console.log("initial load completed")
+            // do we need to check there isn't more than one shape?
+            const center = featureGroup.getBounds().getCenter()
+            const zoom = mapComponent.map.getZoom()
+            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            console.log(url)
+            if ($nationalMapLink) {
+                // only show this for the datasets we've added to the national map
+                $nationalMapLink.href = url
+                $nationalMapLink.classList.remove("js-hidden")
+            }
+        }
+    })
 </script>
 <script>
     // Initialise back to top

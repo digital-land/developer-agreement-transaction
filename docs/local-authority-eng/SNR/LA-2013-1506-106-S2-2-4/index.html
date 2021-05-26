@@ -130,7 +130,7 @@
                 </a>
             </li><li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
-                Referenced by (0)
+                0 References
                 </a>
             </li>
         </ul>
@@ -147,6 +147,15 @@
 </div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">amount
+            </dt>
+            <dd class="govuk-summary-list__value">                -59532.54            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">developer-agreement-contribution
+            </dt>
+            <dd class="govuk-summary-list__value">LA/2013/1506/106/S2-2
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SNR" class="govuk-link">South Northamptonshire Council</a>
@@ -156,15 +165,6 @@
             <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
             <dd class="govuk-summary-list__value">                <span class="dl-select-all">LA/2013/1506/106/S2-2/4</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">amount
-            </dt>
-            <dd class="govuk-summary-list__value">                -59532.54            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-contribution
-            </dt>
-            <dd class="govuk-summary-list__value">LA/2013/1506/106/S2-2
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -193,22 +193,22 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>organisation</th>
             <th>contribution-funding-status</th>
             <th>developer-agreement-contribution</th>
-            <th>developer-agreement-transaction</th>
             <th>amount</th>
+            <th>organisation</th>
+            <th>developer-agreement-transaction</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-03-25</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/b23b22a539c76b8a3f5c3fd721cb1b79a50988e78c26140c914c2450ea4b52f7.csv#L59">b23b22a539c7...</a></td>
             <td>58</td>
-                <td>local-authority-eng:SNR</td> 
                 <td>allocated</td> 
                 <td>LA/2013/1506/106/S2-2</td> 
-                <td>LA/2013/1506/106/S2-2/4</td> 
                 <td>-59532.54</td> 
+                <td>local-authority-eng:SNR</td> 
+                <td>LA/2013/1506/106/S2-2/4</td> 
         </tr>    </tbody>
 </table>
 
@@ -314,8 +314,24 @@
 	</script>
 
 <script>
+    const datasetName = "developer-agreement-transaction"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({})
+    const $nationalMapLink = document.querySelector('.dl-link-national-map')
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        initGeoJsonLoadCallback: function (urls, featureGroup) {
+            console.log("initial load completed")
+            // do we need to check there isn't more than one shape?
+            const center = featureGroup.getBounds().getCenter()
+            const zoom = mapComponent.map.getZoom()
+            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            console.log(url)
+            if ($nationalMapLink) {
+                // only show this for the datasets we've added to the national map
+                $nationalMapLink.href = url
+                $nationalMapLink.classList.remove("js-hidden")
+            }
+        }
+    })
 </script>
 <script>
     // Initialise back to top

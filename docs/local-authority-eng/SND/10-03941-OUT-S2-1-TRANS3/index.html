@@ -130,7 +130,7 @@
                 </a>
             </li><li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
-                Referenced by (0)
+                0 References
                 </a>
             </li>
         </ul>
@@ -140,11 +140,14 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/SND/10-03941-OUT-S2-1-TRANS3</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">contribution-funding-status
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/allocated" class="govuk-link">Allocated</a>
-<span title="contribution-funding-status identifier: allocated" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>allocated)</span>
-</div>
+            <dd class="govuk-summary-list__value">                2015-12-11            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SND" class="govuk-link">Sunderland City Council</a>
+<span title="Organisation identifier: local-authority-eng:SND" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SND)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-transaction
@@ -156,19 +159,16 @@
             <dd class="govuk-summary-list__value">10/03941/OUT-S2.3
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SND" class="govuk-link">Sunderland City Council</a>
-<span title="Organisation identifier: local-authority-eng:SND" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SND)</span>
+            <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/allocated" class="govuk-link">Allocated</a>
+<span title="contribution-funding-status identifier: allocated" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>allocated)</span>
+</div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">amount
             </dt>
             <dd class="govuk-summary-list__value">                8818            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2015-12-11            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -197,24 +197,24 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>organisation</th>
             <th>contribution-funding-status</th>
-            <th>developer-agreement-contribution</th>
-            <th>developer-agreement-transaction</th>
-            <th>amount</th>
             <th>start-date</th>
+            <th>developer-agreement-contribution</th>
+            <th>amount</th>
+            <th>organisation</th>
+            <th>developer-agreement-transaction</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-01</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/8633d3fb888237fb0da41e8f286b377304c3ff4e4d481e0d025c2c3aefc86587.csv#L160">8633d3fb8882...</a></td>
             <td>159</td>
-                <td>local-authority-eng:SND</td> 
                 <td>allocated</td> 
-                <td>10/03941/OUT-S2.3</td> 
-                <td>10/03941/OUT-S2.1-TRANS3</td> 
-                <td>8818</td> 
                 <td>2015-12-11</td> 
+                <td>10/03941/OUT-S2.3</td> 
+                <td>8818</td> 
+                <td>local-authority-eng:SND</td> 
+                <td>10/03941/OUT-S2.1-TRANS3</td> 
         </tr>    </tbody>
 </table>
 
@@ -320,8 +320,24 @@
 	</script>
 
 <script>
+    const datasetName = "developer-agreement-transaction"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({})
+    const $nationalMapLink = document.querySelector('.dl-link-national-map')
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        initGeoJsonLoadCallback: function (urls, featureGroup) {
+            console.log("initial load completed")
+            // do we need to check there isn't more than one shape?
+            const center = featureGroup.getBounds().getCenter()
+            const zoom = mapComponent.map.getZoom()
+            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            console.log(url)
+            if ($nationalMapLink) {
+                // only show this for the datasets we've added to the national map
+                $nationalMapLink.href = url
+                $nationalMapLink.classList.remove("js-hidden")
+            }
+        }
+    })
 </script>
 <script>
     // Initialise back to top
