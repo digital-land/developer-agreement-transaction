@@ -140,17 +140,9 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/EST/Sports---Leisure-P-2014-01563</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">amount
+            <dt class="govuk-summary-list__key">units
             </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2020-03-31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">Sports &amp; Leisure_P/2014/01563</span>            </dd>
+            <dd class="govuk-summary-list__value">                1            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -158,10 +150,9 @@
 <span title="Organisation identifier: local-authority-eng:EST" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EST)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-contribution
+            <dt class="govuk-summary-list__key">amount
             </dt>
-            <dd class="govuk-summary-list__value">P/2014/01563-da
-            </dd>
+            <dd class="govuk-summary-list__value">                0            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
@@ -170,9 +161,18 @@
 </div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">units
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
-            <dd class="govuk-summary-list__value">                1            </dd>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">Sports &amp; Leisure_P/2014/01563</span>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-03-31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">developer-agreement-contribution
+            </dt>
+            <dd class="govuk-summary-list__value">P/2014/01563-da
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -201,26 +201,26 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>developer-agreement-contribution</th>
+            <th>developer-agreement-transaction</th>
             <th>organisation</th>
             <th>amount</th>
             <th>units</th>
             <th>contribution-funding-status</th>
             <th>start-date</th>
-            <th>developer-agreement-transaction</th>
-            <th>developer-agreement-contribution</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-05-28</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/47e2252dfb25627a65206330ec2454d9e5673150ef414f0e3b0c54eb123ebce7.csv#L53">47e2252dfb25...</a></td>
             <td>52</td>
+                <td>P/2014/01563-da</td> 
+                <td>Sports &amp; Leisure_P/2014/01563</td> 
                 <td>local-authority-eng:EST</td> 
                 <td>0</td> 
                 <td>1</td> 
                 <td>received</td> 
                 <td>2020-03-31</td> 
-                <td>Sports &amp; Leisure_P/2014/01563</td> 
-                <td>P/2014/01563-da</td> 
         </tr>    </tbody>
 </table>
 
@@ -335,7 +335,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

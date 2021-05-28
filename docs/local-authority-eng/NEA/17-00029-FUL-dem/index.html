@@ -140,23 +140,18 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/NEA/17-00029-FUL-dem</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NEA" class="govuk-link">Newark and Sherwood District Council</a>
-<span title="Organisation identifier: local-authority-eng:NEA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NEA)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">amount
-            </dt>
-            <dd class="govuk-summary-list__value">                6541.2            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2019-07-09            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-contribution
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/NEA/17-00029-FUL-con" class="govuk-link">17/00029/FUL-con</a>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">17/00029/FUL-dem</span>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NEA" class="govuk-link">Newark and Sherwood District Council</a>
+<span title="Organisation identifier: local-authority-eng:NEA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NEA)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">contribution-funding-status
@@ -166,9 +161,14 @@
 </div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
+            <dt class="govuk-summary-list__key">developer-agreement-contribution
             </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">17/00029/FUL-dem</span>            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/NEA/17-00029-FUL-con" class="govuk-link">17/00029/FUL-con</a>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">amount
+            </dt>
+            <dd class="govuk-summary-list__value">                6541.2            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -198,11 +198,11 @@
             <th>resource</th>
             <th>line</th>
             <th>developer-agreement-contribution</th>
+            <th>developer-agreement-transaction</th>
             <th>organisation</th>
             <th>amount</th>
-            <th>start-date</th>
-            <th>developer-agreement-transaction</th>
             <th>contribution-funding-status</th>
+            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -210,11 +210,11 @@
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/02630d89581c914e9b79a34551d5affbe41acdbbbbdeeb7ad409cff5ce29a796.csv#L18">02630d89581c...</a></td>
             <td>17</td>
                 <td>17/00029/FUL-con</td> 
+                <td>17/00029/FUL-dem</td> 
                 <td>local-authority-eng:NEA</td> 
                 <td>6541.2</td> 
-                <td>2019-07-09</td> 
-                <td>17/00029/FUL-dem</td> 
                 <td>secured</td> 
+                <td>2019-07-09</td> 
         </tr>    </tbody>
 </table>
 
@@ -329,7 +329,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

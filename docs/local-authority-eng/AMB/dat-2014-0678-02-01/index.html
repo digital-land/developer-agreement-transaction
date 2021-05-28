@@ -145,9 +145,11 @@
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/AMB/dac-2014-0678-02" class="govuk-link">dac-2014-0678-02</a>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">amount
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                100            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/AMB" class="govuk-link">Amber Valley Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:AMB" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:AMB)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
@@ -157,11 +159,9 @@
             </dt>
             <dd class="govuk-summary-list__value">                <span class="dl-select-all">dat-2014-0678-02-01</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">amount
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/AMB" class="govuk-link">Amber Valley Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:AMB" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:AMB)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                100            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
@@ -197,24 +197,24 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>developer-agreement-contribution</th>
+            <th>developer-agreement-transaction</th>
             <th>organisation</th>
             <th>amount</th>
             <th>contribution-funding-status</th>
             <th>start-date</th>
-            <th>developer-agreement-transaction</th>
-            <th>developer-agreement-contribution</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-11-11</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/6bb3c77a4730adae3508a934118c75e698f47c2988498ffd2bc573e41b55c27c.csv#L22">6bb3c77a4730...</a></td>
             <td>21</td>
+                <td>dac-2014-0678-02</td> 
+                <td>dat-2014-0678-02-01</td> 
                 <td>local-authority-eng:AMB</td> 
                 <td>100</td> 
                 <td>received</td> 
                 <td>2019-11-15</td> 
-                <td>dat-2014-0678-02-01</td> 
-                <td>dac-2014-0678-02</td> 
         </tr>    </tbody>
 </table>
 
@@ -329,7 +329,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

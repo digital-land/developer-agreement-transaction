@@ -140,10 +140,18 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/NTY/18-00608-S106-2-T1</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">18/00608/S106/2/T1</span>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-contribution
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/NTY/18-00608-S106-2" class="govuk-link">18/00608/S106/2</a>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">units
+            </dt>
+            <dd class="govuk-summary-list__value">                11            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
@@ -152,17 +160,9 @@
 </div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">units
-            </dt>
-            <dd class="govuk-summary-list__value">                11            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-01-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">18/00608/S106/2/T1</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -197,24 +197,24 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>developer-agreement-contribution</th>
+            <th>developer-agreement-transaction</th>
             <th>organisation</th>
             <th>units</th>
             <th>contribution-funding-status</th>
             <th>start-date</th>
-            <th>developer-agreement-transaction</th>
-            <th>developer-agreement-contribution</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-11</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/23a6b25c16ca0628675350e6b310d900e1be409aa5547a195309825ec01621f8.csv#L213">23a6b25c16ca...</a></td>
             <td>212</td>
+                <td>18/00608/S106/2</td> 
+                <td>18/00608/S106/2/T1</td> 
                 <td>local-authority-eng:NTY</td> 
                 <td>11</td> 
                 <td>Received</td> 
                 <td>2020-01-01</td> 
-                <td>18/00608/S106/2/T1</td> 
-                <td>18/00608/S106/2</td> 
         </tr>    </tbody>
 </table>
 
@@ -329,7 +329,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

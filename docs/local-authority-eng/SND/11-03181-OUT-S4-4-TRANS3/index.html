@@ -140,9 +140,12 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/SND/11-03181-OUT-S4-4-TRANS3</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
-            <dd class="govuk-summary-list__value">                2017-04-06            </dd>
+            <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/allocated" class="govuk-link">Allocated</a>
+<span title="contribution-funding-status identifier: allocated" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>allocated)</span>
+</div>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
@@ -158,17 +161,14 @@
             </dt>
             <dd class="govuk-summary-list__value">                14020            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">contribution-funding-status
-            </dt>
-            <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/allocated" class="govuk-link">Allocated</a>
-<span title="contribution-funding-status identifier: allocated" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>allocated)</span>
-</div>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-contribution
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/SND/11-03181-OUT-S4-4" class="govuk-link">11/03181/OUT-S4.4</a>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-04-06            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -198,11 +198,11 @@
             <th>resource</th>
             <th>line</th>
             <th>developer-agreement-contribution</th>
+            <th>developer-agreement-transaction</th>
             <th>organisation</th>
             <th>amount</th>
-            <th>start-date</th>
-            <th>developer-agreement-transaction</th>
             <th>contribution-funding-status</th>
+            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -210,11 +210,11 @@
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/8633d3fb888237fb0da41e8f286b377304c3ff4e4d481e0d025c2c3aefc86587.csv#L124">8633d3fb8882...</a></td>
             <td>123</td>
                 <td>11/03181/OUT-S4.4</td> 
+                <td>11/03181/OUT-S4.4-TRANS3</td> 
                 <td>local-authority-eng:SND</td> 
                 <td>14020</td> 
-                <td>2017-04-06</td> 
-                <td>11/03181/OUT-S4.4-TRANS3</td> 
                 <td>allocated</td> 
+                <td>2017-04-06</td> 
         </tr>    </tbody>
 </table>
 
@@ -329,7 +329,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

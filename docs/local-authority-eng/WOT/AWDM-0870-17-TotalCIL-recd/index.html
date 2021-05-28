@@ -140,20 +140,14 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/WOT/AWDM-0870-17-TotalCIL-recd</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">amount
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WOT" class="govuk-link">Worthing Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:WOT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WOT)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                5500            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-contribution
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/WOT/AWDM-0870-17-TotalCIL" class="govuk-link">AWDM/0870/17-TotalCIL</a>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">AWDM/0870/17-TotalCIL-recd</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
@@ -162,13 +156,19 @@
 </div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">amount
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
-            <dd class="govuk-summary-list__value">                5500            </dd>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">AWDM/0870/17-TotalCIL-recd</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2019-12-02            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WOT" class="govuk-link">Worthing Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:WOT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WOT)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -198,11 +198,11 @@
             <th>resource</th>
             <th>line</th>
             <th>developer-agreement-contribution</th>
+            <th>developer-agreement-transaction</th>
             <th>organisation</th>
             <th>amount</th>
-            <th>start-date</th>
-            <th>developer-agreement-transaction</th>
             <th>contribution-funding-status</th>
+            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -210,11 +210,11 @@
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/db997853c615a760b3c77a390b4e7c7f62ff993b778e7d1c991db8e650fe4859.csv#L34">db997853c615...</a></td>
             <td>33</td>
                 <td>AWDM/0870/17-TotalCIL</td> 
+                <td>AWDM/0870/17-TotalCIL-recd</td> 
                 <td>local-authority-eng:WOT</td> 
                 <td>5500</td> 
-                <td>2019-12-02</td> 
-                <td>AWDM/0870/17-TotalCIL-recd</td> 
                 <td>received</td> 
+                <td>2019-12-02</td> 
         </tr>    </tbody>
 </table>
 
@@ -329,7 +329,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map
