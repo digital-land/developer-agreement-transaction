@@ -144,9 +144,12 @@
             </dt>
             <dd class="govuk-summary-list__value">                2019-01-01            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
+            <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">13/01433/S106/5/T1</span>            </dd>
+            <dd class="govuk-summary-list__value"><div>None
+<span title="contribution-funding-status identifier: Allocated" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>Allocated)</span>
+</div>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -159,12 +162,9 @@
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/NTY/13-01433-S106-5" class="govuk-link">13/01433/S106/5</a>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">contribution-funding-status
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
-            <dd class="govuk-summary-list__value"><div>None
-<span title="contribution-funding-status identifier: Allocated" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>Allocated)</span>
-</div>
-            </dd>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">13/01433/S106/5/T1</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -193,22 +193,22 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>developer-agreement-contribution</th>
+            <th>start-date</th>
             <th>developer-agreement-transaction</th>
-            <th>contribution-funding-status</th>
             <th>organisation</th>
+            <th>contribution-funding-status</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-11</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/23a6b25c16ca0628675350e6b310d900e1be409aa5547a195309825ec01621f8.csv#L77">23a6b25c16ca...</a></td>
             <td>76</td>
-                <td>2019-01-01</td> 
                 <td>13/01433/S106/5</td> 
+                <td>2019-01-01</td> 
                 <td>13/01433/S106/5/T1</td> 
-                <td>Allocated</td> 
                 <td>local-authority-eng:NTY</td> 
+                <td>Allocated</td> 
         </tr>    </tbody>
 </table>
 
@@ -318,7 +318,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

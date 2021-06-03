@@ -151,24 +151,24 @@
             </dt>
             <dd class="govuk-summary-list__value">                49395            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">06/02209/FUL-S2.3.1.2-TW-TRANS3</span>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-contribution
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/SND/06-02209-FUL-S2-3-1-2" class="govuk-link">06/02209/FUL-S2.3.1.2</a>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-04-07            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">06/02209/FUL-S2.3.1.2-TW-TRANS3</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SND" class="govuk-link">Sunderland City Council</a>
 <span title="Organisation identifier: local-authority-eng:SND" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SND)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-04-07            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -197,24 +197,24 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>developer-agreement-contribution</th>
-            <th>amount</th>
+            <th>start-date</th>
             <th>developer-agreement-transaction</th>
-            <th>contribution-funding-status</th>
             <th>organisation</th>
+            <th>amount</th>
+            <th>contribution-funding-status</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-11-05</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/8633d3fb888237fb0da41e8f286b377304c3ff4e4d481e0d025c2c3aefc86587.csv#L44">8633d3fb8882...</a></td>
             <td>43</td>
-                <td>2017-04-07</td> 
                 <td>06/02209/FUL-S2.3.1.2</td> 
-                <td>49395</td> 
+                <td>2017-04-07</td> 
                 <td>06/02209/FUL-S2.3.1.2-TW-TRANS3</td> 
-                <td>allocated</td> 
                 <td>local-authority-eng:SND</td> 
+                <td>49395</td> 
+                <td>allocated</td> 
         </tr>    </tbody>
 </table>
 
@@ -324,7 +324,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

@@ -146,6 +146,14 @@
 <span title="Organisation identifier: local-authority-eng:IOW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:IOW)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">P/01373/09-1-11-41</span>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2012-09-08            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
             <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/received" class="govuk-link">Received</a>
@@ -157,14 +165,6 @@
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/IOW/P-01373-09-1-11" class="govuk-link">P/01373/09-1-11</a>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">P/01373/09-1-11-41</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2012-09-08            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">amount
             </dt>
@@ -197,24 +197,24 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>developer-agreement-contribution</th>
+            <th>start-date</th>
             <th>developer-agreement-transaction</th>
+            <th>organisation</th>
             <th>amount</th>
             <th>contribution-funding-status</th>
-            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2012-09-08</td>
-            <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/91bb287d63bb37ae06164d96799a9a78134f528adfc6ba5081c344c53eb527ed.csv#L110">91bb287d63bb...</a></td>
-            <td>109</td>
-                <td>2012-09-08</td> 
+            <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/9c54ce45124afc605e2e4d782f2a0efb33a5f6fb74184a3382ef02ee6919cb37.csv#L112">9c54ce45124a...</a></td>
+            <td>111</td>
                 <td>P/01373/09-1-11</td> 
+                <td>2012-09-08</td> 
                 <td>P/01373/09-1-11-41</td> 
+                <td>local-authority-eng:IOW</td> 
                 <td>500</td> 
                 <td>received</td> 
-                <td>local-authority-eng:IOW</td> 
         </tr>    </tbody>
 </table>
 
@@ -324,7 +324,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

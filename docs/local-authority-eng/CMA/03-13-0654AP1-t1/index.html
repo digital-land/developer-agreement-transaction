@@ -140,6 +140,11 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/CMA/03-13-0654AP1-t1</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">developer-agreement-contribution
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/CMA/03-13-0654AP1" class="govuk-link">03/13/0654AP1</a>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
             <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/received" class="govuk-link">Received</a>
@@ -160,11 +165,6 @@
             <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
             <dd class="govuk-summary-list__value">                <span class="dl-select-all">03/13/0654AP1-t1</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-contribution
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/CMA/03-13-0654AP1" class="govuk-link">03/13/0654AP1</a>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">amount
             </dt>
@@ -197,24 +197,24 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>developer-agreement-contribution</th>
+            <th>start-date</th>
             <th>developer-agreement-transaction</th>
+            <th>organisation</th>
             <th>amount</th>
             <th>contribution-funding-status</th>
-            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-17</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/afcc9a4d4c494c1298af72f4e422bfe1d973bcbbafa91ac69e93d3abb2b06a6c.csv#L136">afcc9a4d4c49...</a></td>
             <td>135</td>
-                <td>2019-04-24</td> 
                 <td>03/13/0654AP1</td> 
+                <td>2019-04-24</td> 
                 <td>03/13/0654AP1-t1</td> 
+                <td>local-authority-eng:CMA</td> 
                 <td>247864.95</td> 
                 <td>received</td> 
-                <td>local-authority-eng:CMA</td> 
         </tr>    </tbody>
 </table>
 
@@ -324,7 +324,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

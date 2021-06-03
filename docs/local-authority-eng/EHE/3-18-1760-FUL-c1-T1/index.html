@@ -144,10 +144,6 @@
             </dt>
             <dd class="govuk-summary-list__value">                2020-03-27            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">3_18_1760_FUL-c1-T1</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/EHE" class="govuk-link">East Hertfordshire District Council</a>
@@ -157,6 +153,10 @@
             <dt class="govuk-summary-list__key">units
             </dt>
             <dd class="govuk-summary-list__value">                56            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">3_18_1760_FUL-c1-T1</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -308,7 +308,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

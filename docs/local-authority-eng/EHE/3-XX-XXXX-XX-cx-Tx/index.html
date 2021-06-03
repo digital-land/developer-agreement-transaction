@@ -140,15 +140,15 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/EHE/3-XX-XXXX-XX-cx-Tx</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">3_XX_XXXX_XX-cx-Tx</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/EHE" class="govuk-link">East Hertfordshire District Council</a>
 <span title="Organisation identifier: local-authority-eng:EHE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EHE)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">3_XX_XXXX_XX-cx-Tx</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -296,7 +296,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

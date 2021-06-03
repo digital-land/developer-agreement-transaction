@@ -140,12 +140,13 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/SHA/32</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">contribution-funding-status
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
-            <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/spent" class="govuk-link">Spent</a>
-<span title="contribution-funding-status identifier: spent" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>spent)</span>
-</div>
-            </dd>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">32</span>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">amount
+            </dt>
+            <dd class="govuk-summary-list__value">                -48436.6            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">end-date
             </dt>
@@ -166,13 +167,12 @@
 <span title="Organisation identifier: local-authority-eng:SHA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHA)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
+            <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">32</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">amount
-            </dt>
-            <dd class="govuk-summary-list__value">                -48436.6            </dd>
+            <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/spent" class="govuk-link">Spent</a>
+<span title="contribution-funding-status identifier: spent" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>spent)</span>
+</div>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -201,26 +201,26 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>end-date</th>
-            <th>start-date</th>
             <th>developer-agreement-contribution</th>
+            <th>start-date</th>
+            <th>end-date</th>
             <th>developer-agreement-transaction</th>
+            <th>organisation</th>
             <th>amount</th>
             <th>contribution-funding-status</th>
-            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2014-11-26</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/6d4aac412849618d6a4df09ddeaeee9dc3a72411b67e962e074c0375477b7fee.csv#L33">6d4aac412849...</a></td>
             <td>32</td>
-                <td>2020-03-31</td> 
-                <td>2014-11-26</td> 
                 <td>0354/14-CON1</td> 
+                <td>2014-11-26</td> 
+                <td>2020-03-31</td> 
                 <td>32</td> 
+                <td>local-authority-eng:SHA</td> 
                 <td>-48436.6</td> 
                 <td>spent</td> 
-                <td>local-authority-eng:SHA</td> 
         </tr>    </tbody>
 </table>
 
@@ -330,7 +330,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

@@ -147,13 +147,17 @@
 </div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">15/05550/CIL</span>            </dd>
+            <dd class="govuk-summary-list__value">                2019-06-06            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">amount
+            </dt>
+            <dd class="govuk-summary-list__value">                595            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-contribution
             </dt>
-            <dd class="govuk-summary-list__value">LA2015/420B
+            <dd class="govuk-summary-list__value">LA2015/420A
             </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
@@ -162,13 +166,9 @@
 <span title="Organisation identifier: local-authority-eng:WIL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WIL)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">developer-agreement-transaction
             </dt>
-            <dd class="govuk-summary-list__value">                2019-06-06            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">amount
-            </dt>
-            <dd class="govuk-summary-list__value">                2975            </dd>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">15/05550/CIL</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -197,34 +197,34 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>developer-agreement-contribution</th>
-            <th>amount</th>
+            <th>start-date</th>
             <th>developer-agreement-transaction</th>
-            <th>contribution-funding-status</th>
             <th>organisation</th>
+            <th>amount</th>
+            <th>contribution-funding-status</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-04-15</td>
-            <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/9fdab27cb4f89647e2089f4c2d27b75f8f53d88b180d9da964f1ea7c1c92db7d.csv#L11">9fdab27cb4f8...</a></td>
-            <td>10</td>
-                <td>2019-06-06</td> 
-                <td>LA2015/420B</td> 
-                <td>2975</td> 
-                <td>15/05550/CIL</td> 
-                <td>received</td> 
-                <td>local-authority-eng:WIL</td> 
-        </tr>        <tr>
-            <td>2020-04-15</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/9fdab27cb4f89647e2089f4c2d27b75f8f53d88b180d9da964f1ea7c1c92db7d.csv#L10">9fdab27cb4f8...</a></td>
             <td>9</td>
-                <td>2019-06-06</td> 
                 <td>LA2015/420A</td> 
-                <td>595</td> 
+                <td>2019-06-06</td> 
                 <td>15/05550/CIL</td> 
-                <td>received</td> 
                 <td>local-authority-eng:WIL</td> 
+                <td>595</td> 
+                <td>received</td> 
+        </tr>        <tr>
+            <td>2020-04-15</td>
+            <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/9fdab27cb4f89647e2089f4c2d27b75f8f53d88b180d9da964f1ea7c1c92db7d.csv#L11">9fdab27cb4f8...</a></td>
+            <td>10</td>
+                <td>LA2015/420B</td> 
+                <td>2019-06-06</td> 
+                <td>15/05550/CIL</td> 
+                <td>local-authority-eng:WIL</td> 
+                <td>2975</td> 
+                <td>received</td> 
         </tr>    </tbody>
 </table>
 
@@ -334,7 +334,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

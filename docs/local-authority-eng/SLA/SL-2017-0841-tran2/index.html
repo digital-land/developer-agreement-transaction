@@ -150,14 +150,14 @@
             </dt>
             <dd class="govuk-summary-list__value">                72150            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2019-07-18            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">developer-agreement-contribution
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/SLA/SL-2017-0841-con2" class="govuk-link">SL/2017/0841-con2</a>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2019-07-18            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">contribution-funding-status
             </dt>
@@ -197,24 +197,24 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>developer-agreement-contribution</th>
-            <th>amount</th>
+            <th>start-date</th>
             <th>developer-agreement-transaction</th>
-            <th>contribution-funding-status</th>
             <th>organisation</th>
+            <th>amount</th>
+            <th>contribution-funding-status</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-14</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/3627eee409268e96dde71b17a368f269f6d15b837d5d487febe86716c5cde210.csv#L3">3627eee40926...</a></td>
             <td>2</td>
-                <td>2019-07-18</td> 
                 <td>SL/2017/0841-con2</td> 
-                <td>72150</td> 
+                <td>2019-07-18</td> 
                 <td>SL/2017/0841-tran2</td> 
-                <td>secured</td> 
                 <td>local-authority-eng:SLA</td> 
+                <td>72150</td> 
+                <td>secured</td> 
         </tr>    </tbody>
 </table>
 
@@ -324,7 +324,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
