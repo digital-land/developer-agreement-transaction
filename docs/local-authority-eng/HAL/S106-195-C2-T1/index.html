@@ -138,37 +138,37 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/developer-agreement-transaction/local-authority-eng/HAL/S106-195-C2-T1</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-contribution
+            <dt class="govuk-summary-list__key">Amount
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/HAL/S106-195-C2" class="govuk-link">S106-195-C2</a>
+            <dd class="govuk-summary-list__value">                15000            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HAL" class="govuk-link">Halton Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:HAL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HAL)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">Developer agreement transaction
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">S106-195-C2-T1</span>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Start date
             </dt>
             <dd class="govuk-summary-list__value">                2013-10-15            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">contribution-funding-status
+            <dt class="govuk-summary-list__key">Contribution funding status
             </dt>
             <dd class="govuk-summary-list__value"><div><a href="https://digital-land.github.io/contribution-funding-status/secured" class="govuk-link">Secured</a>
 <span title="contribution-funding-status identifier: secured" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">contribution-funding-status identifier is </span>secured)</span>
 </div>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">amount
+            <dt class="govuk-summary-list__key">Developer agreement contribution
             </dt>
-            <dd class="govuk-summary-list__value">                15000            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HAL" class="govuk-link">Halton Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:HAL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HAL)</span>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/developer-agreement-contribution/local-authority-eng/HAL/S106-195-C2" class="govuk-link">S106-195-C2</a>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">developer-agreement-transaction
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">S106-195-C2-T1</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
+            <dt class="govuk-summary-list__key">Entry date
             </dt>
             <dd class="govuk-summary-list__value">                2020-12-22            </dd>
         </div>    
@@ -193,11 +193,11 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
+            <th>organisation</th>
             <th>developer-agreement-contribution</th>
             <th>contribution-funding-status</th>
+            <th>start-date</th>
             <th>developer-agreement-transaction</th>
-            <th>organisation</th>
             <th>amount</th>
         </tr>
     </thead>
@@ -205,11 +205,11 @@
             <td>2020-12-22</td>
             <td><a href="https://github.com/digital-land/developer-agreement-transaction-collection/tree/main/transformed/developer-agreement-transaction/8ff04e93fa2488751faf4323846b1ec6138f543388301a0094297759fea7c8d2.csv#L60">8ff04e93fa24...</a></td>
             <td>59</td>
-                <td>2013-10-15</td> 
+                <td>local-authority-eng:HAL</td> 
                 <td>S106-195-C2</td> 
                 <td>secured</td> 
+                <td>2013-10-15</td> 
                 <td>S106-195-C2-T1</td> 
-                <td>local-authority-eng:HAL</td> 
                 <td>15000</td> 
         </tr>    </tbody>
 </table>
@@ -319,21 +319,24 @@
     const datasetName = "developer-agreement-transaction"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
-    const mapComponent = new DLMaps.Map($mapElement).init({
-        initZoomCallback: function (featureGroup) {
-            console.log("initial load completed")
-            // do we need to check there isn't more than one shape?
-            const center = featureGroup.getBounds().getCenter()
-            const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
-            console.log(url)
-            if ($nationalMapLink) {
-                // only show this for the datasets we've added to the national map
-                $nationalMapLink.href = url
-                $nationalMapLink.classList.remove("js-hidden")
-            }
-        }
-    })
+    const mapParams = {
+    initZoomCallback: function (featureGroup, map) {
+          console.log("initial load completed")
+          // do we need to check there isn't more than one shape?
+          const center = featureGroup.getBounds().getCenter()
+          const zoom = map.getZoom()
+          let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+          console.log(url)
+          if ($nationalMapLink) {
+              // only show this for the datasets we've added to the national map
+              $nationalMapLink.href = url
+              $nationalMapLink.classList.remove("js-hidden")
+          }
+      }
+    }
+
+
+    const mapComponent = new DLMaps.Map($mapElement).init(mapParams)
 </script>
 <script>
     // Initialise back to top
